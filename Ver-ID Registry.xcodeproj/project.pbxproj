@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B15EFAA2E43BA6100938641 /* FaceDetectionRetinaFace in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15EFA92E43BA6100938641 /* FaceDetectionRetinaFace */; };
+		3B15EFAD2E43BE1900938641 /* FaceDetectionRetinaFace in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15EFAC2E43BE1900938641 /* FaceDetectionRetinaFace */; };
+		3B15EFB02E43D10A00938641 /* FaceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15EFAF2E43D10A00938641 /* FaceCapture */; };
+		3BA2F3F02E4204FE00EE01A1 /* SpoofDeviceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA2F3EF2E4204FE00EE01A1 /* SpoofDeviceDetection */; };
+		3BA2F3F22E4204FE00EE01A1 /* SpoofDeviceDetectionCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA2F3F12E4204FE00EE01A1 /* SpoofDeviceDetectionCore */; };
+		3BA2F3F52E42278000EE01A1 /* RegistrationIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F3F42E42278000EE01A1 /* RegistrationIntroView.swift */; };
+		3BA2F3F72E422A6900EE01A1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F3F62E422A6900EE01A1 /* SettingsView.swift */; };
+		3BA2F3F92E4230AE00EE01A1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F3F82E4230AE00EE01A1 /* Settings.swift */; };
+		3BAAC14F2E3B9EDB007EAFA7 /* Ver_ID_RegistryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC14E2E3B9EDB007EAFA7 /* Ver_ID_RegistryApp.swift */; };
+		3BAAC1512E3B9EDB007EAFA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC1502E3B9EDB007EAFA7 /* ContentView.swift */; };
+		3BAAC1552E3B9EE1007EAFA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAAC1542E3B9EE1007EAFA7 /* Assets.xcassets */; };
+		3BAAC1582E3B9EE1007EAFA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAAC1572E3B9EE1007EAFA7 /* Preview Assets.xcassets */; };
+		3BAAC1602E3BA244007EAFA7 /* FaceTemplateRegistry in Frameworks */ = {isa = PBXBuildFile; productRef = 3BAAC15F2E3BA244007EAFA7 /* FaceTemplateRegistry */; };
+		3BAAC1632E3BA488007EAFA7 /* FaceRecognitionArcFaceCloud in Frameworks */ = {isa = PBXBuildFile; productRef = 3BAAC1622E3BA488007EAFA7 /* FaceRecognitionArcFaceCloud */; };
+		3BAAC1652E3BA488007EAFA7 /* FaceRecognitionArcFaceCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BAAC1642E3BA488007EAFA7 /* FaceRecognitionArcFaceCore */; };
+		3BAAC16F2E3BAE9B007EAFA7 /* TaggedFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC16E2E3BAE9B007EAFA7 /* TaggedFace.swift */; };
+		3BAAC1712E3BBB7F007EAFA7 /* RegistrationReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC1702E3BBB7F007EAFA7 /* RegistrationReview.swift */; };
+		3BAAC1732E3BCED1007EAFA7 /* RandomNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC1722E3BCED1007EAFA7 /* RandomNameGenerator.swift */; };
+		3BAAC1752E3CC3ED007EAFA7 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC1742E3CC3ED007EAFA7 /* UserView.swift */; };
+		3BAAC1772E3CC5C4007EAFA7 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC1762E3CC5C4007EAFA7 /* ImageUtils.swift */; };
+		3BAAC17A2E3CE8A2007EAFA7 /* FaceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 3BAAC1792E3CE8A2007EAFA7 /* FaceCapture */; };
+		3BAAC1802E3D2AF2007EAFA7 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAC17F2E3D2AF1007EAFA7 /* UsersView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BA2F3F42E42278000EE01A1 /* RegistrationIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationIntroView.swift; sourceTree = "<group>"; };
+		3BA2F3F62E422A6900EE01A1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3BA2F3F82E4230AE00EE01A1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3BAAC14B2E3B9EDB007EAFA7 /* Ver-ID Registry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ver-ID Registry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BAAC14E2E3B9EDB007EAFA7 /* Ver_ID_RegistryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ver_ID_RegistryApp.swift; sourceTree = "<group>"; };
+		3BAAC1502E3B9EDB007EAFA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BAAC1542E3B9EE1007EAFA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BAAC1572E3B9EE1007EAFA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BAAC16E2E3BAE9B007EAFA7 /* TaggedFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedFace.swift; sourceTree = "<group>"; };
+		3BAAC1702E3BBB7F007EAFA7 /* RegistrationReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationReview.swift; sourceTree = "<group>"; };
+		3BAAC1722E3BCED1007EAFA7 /* RandomNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNameGenerator.swift; sourceTree = "<group>"; };
+		3BAAC1742E3CC3ED007EAFA7 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		3BAAC1762E3CC5C4007EAFA7 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		3BAAC17F2E3D2AF1007EAFA7 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BAAC1482E3B9EDB007EAFA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA2F3F02E4204FE00EE01A1 /* SpoofDeviceDetection in Frameworks */,
+				3BAAC1602E3BA244007EAFA7 /* FaceTemplateRegistry in Frameworks */,
+				3BA2F3F22E4204FE00EE01A1 /* SpoofDeviceDetectionCore in Frameworks */,
+				3B15EFAA2E43BA6100938641 /* FaceDetectionRetinaFace in Frameworks */,
+				3BAAC1632E3BA488007EAFA7 /* FaceRecognitionArcFaceCloud in Frameworks */,
+				3BAAC1652E3BA488007EAFA7 /* FaceRecognitionArcFaceCore in Frameworks */,
+				3BAAC17A2E3CE8A2007EAFA7 /* FaceCapture in Frameworks */,
+				3B15EFB02E43D10A00938641 /* FaceCapture in Frameworks */,
+				3B15EFAD2E43BE1900938641 /* FaceDetectionRetinaFace in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BAAC1422E3B9EDB007EAFA7 = {
+			isa = PBXGroup;
+			children = (
+				3BAAC14D2E3B9EDB007EAFA7 /* Ver-ID Registry */,
+				3BAAC14C2E3B9EDB007EAFA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BAAC14C2E3B9EDB007EAFA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BAAC14B2E3B9EDB007EAFA7 /* Ver-ID Registry.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BAAC14D2E3B9EDB007EAFA7 /* Ver-ID Registry */ = {
+			isa = PBXGroup;
+			children = (
+				3BAAC14E2E3B9EDB007EAFA7 /* Ver_ID_RegistryApp.swift */,
+				3BAAC1502E3B9EDB007EAFA7 /* ContentView.swift */,
+				3BAAC1542E3B9EE1007EAFA7 /* Assets.xcassets */,
+				3BAAC1562E3B9EE1007EAFA7 /* Preview Content */,
+				3BAAC16E2E3BAE9B007EAFA7 /* TaggedFace.swift */,
+				3BAAC1702E3BBB7F007EAFA7 /* RegistrationReview.swift */,
+				3BAAC1722E3BCED1007EAFA7 /* RandomNameGenerator.swift */,
+				3BAAC1742E3CC3ED007EAFA7 /* UserView.swift */,
+				3BAAC1762E3CC5C4007EAFA7 /* ImageUtils.swift */,
+				3BAAC17F2E3D2AF1007EAFA7 /* UsersView.swift */,
+				3BA2F3F42E42278000EE01A1 /* RegistrationIntroView.swift */,
+				3BA2F3F62E422A6900EE01A1 /* SettingsView.swift */,
+				3BA2F3F82E4230AE00EE01A1 /* Settings.swift */,
+			);
+			path = "Ver-ID Registry";
+			sourceTree = "<group>";
+		};
+		3BAAC1562E3B9EE1007EAFA7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3BAAC1572E3B9EE1007EAFA7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BAAC14A2E3B9EDB007EAFA7 /* Ver-ID Registry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BAAC15B2E3B9EE1007EAFA7 /* Build configuration list for PBXNativeTarget "Ver-ID Registry" */;
+			buildPhases = (
+				3BAAC1472E3B9EDB007EAFA7 /* Sources */,
+				3BAAC1482E3B9EDB007EAFA7 /* Frameworks */,
+				3BAAC1492E3B9EDB007EAFA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ver-ID Registry";
+			packageProductDependencies = (
+				3BAAC15F2E3BA244007EAFA7 /* FaceTemplateRegistry */,
+				3BAAC1622E3BA488007EAFA7 /* FaceRecognitionArcFaceCloud */,
+				3BAAC1642E3BA488007EAFA7 /* FaceRecognitionArcFaceCore */,
+				3BAAC1792E3CE8A2007EAFA7 /* FaceCapture */,
+				3BA2F3EF2E4204FE00EE01A1 /* SpoofDeviceDetection */,
+				3BA2F3F12E4204FE00EE01A1 /* SpoofDeviceDetectionCore */,
+				3B15EFA92E43BA6100938641 /* FaceDetectionRetinaFace */,
+				3B15EFAC2E43BE1900938641 /* FaceDetectionRetinaFace */,
+				3B15EFAF2E43D10A00938641 /* FaceCapture */,
+			);
+			productName = "Ver-ID Registry";
+			productReference = 3BAAC14B2E3B9EDB007EAFA7 /* Ver-ID Registry.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BAAC1432E3B9EDB007EAFA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3BAAC14A2E3B9EDB007EAFA7 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 3BAAC1462E3B9EDB007EAFA7 /* Build configuration list for PBXProject "Ver-ID Registry" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BAAC1422E3B9EDB007EAFA7;
+			packageReferences = (
+				3BAAC15E2E3BA244007EAFA7 /* XCRemoteSwiftPackageReference "Face-Template-Registry-Apple" */,
+				3BAAC1612E3BA487007EAFA7 /* XCRemoteSwiftPackageReference "Face-Recognition-ArcFace-Apple" */,
+				3BA2F3EE2E4204FE00EE01A1 /* XCRemoteSwiftPackageReference "Spoof-Device-Detection-Ver-ID-3-Apple" */,
+				3B15EFAB2E43BE1900938641 /* XCRemoteSwiftPackageReference "Face-Detection-RetinaFace-Apple" */,
+				3B15EFAE2E43D10A00938641 /* XCRemoteSwiftPackageReference "Face-Capture-Apple" */,
+			);
+			productRefGroup = 3BAAC14C2E3B9EDB007EAFA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BAAC14A2E3B9EDB007EAFA7 /* Ver-ID Registry */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BAAC1492E3B9EDB007EAFA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAAC1582E3B9EE1007EAFA7 /* Preview Assets.xcassets in Resources */,
+				3BAAC1552E3B9EE1007EAFA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BAAC1472E3B9EDB007EAFA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAAC1712E3BBB7F007EAFA7 /* RegistrationReview.swift in Sources */,
+				3BA2F3F92E4230AE00EE01A1 /* Settings.swift in Sources */,
+				3BAAC1512E3B9EDB007EAFA7 /* ContentView.swift in Sources */,
+				3BAAC16F2E3BAE9B007EAFA7 /* TaggedFace.swift in Sources */,
+				3BA2F3F52E42278000EE01A1 /* RegistrationIntroView.swift in Sources */,
+				3BAAC1802E3D2AF2007EAFA7 /* UsersView.swift in Sources */,
+				3BAAC14F2E3B9EDB007EAFA7 /* Ver_ID_RegistryApp.swift in Sources */,
+				3BAAC1732E3BCED1007EAFA7 /* RandomNameGenerator.swift in Sources */,
+				3BA2F3F72E422A6900EE01A1 /* SettingsView.swift in Sources */,
+				3BAAC1752E3CC3ED007EAFA7 /* UserView.swift in Sources */,
+				3BAAC1772E3CC5C4007EAFA7 /* ImageUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3BAAC1592E3B9EE1007EAFA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BAAC15A2E3B9EE1007EAFA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BAAC15C2E3B9EE1007EAFA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ver-ID Registry/Preview Content\"";
+				DEVELOPMENT_TEAM = CSD8L9EK66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ver-ID Registry/Ver-ID-Registry-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Face capture";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appliedrec.Ver-ID-Registry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BAAC15D2E3B9EE1007EAFA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ver-ID Registry/Preview Content\"";
+				DEVELOPMENT_TEAM = CSD8L9EK66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ver-ID Registry/Ver-ID-Registry-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Face capture";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appliedrec.Ver-ID-Registry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BAAC1462E3B9EDB007EAFA7 /* Build configuration list for PBXProject "Ver-ID Registry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BAAC1592E3B9EE1007EAFA7 /* Debug */,
+				3BAAC15A2E3B9EE1007EAFA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BAAC15B2E3B9EE1007EAFA7 /* Build configuration list for PBXNativeTarget "Ver-ID Registry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BAAC15C2E3B9EE1007EAFA7 /* Debug */,
+				3BAAC15D2E3B9EE1007EAFA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B15EFAB2E43BE1900938641 /* XCRemoteSwiftPackageReference "Face-Detection-RetinaFace-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		3B15EFAE2E43D10A00938641 /* XCRemoteSwiftPackageReference "Face-Capture-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppliedRecognition/Face-Capture-Apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		3BA2F3EE2E4204FE00EE01A1 /* XCRemoteSwiftPackageReference "Spoof-Device-Detection-Ver-ID-3-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		3BAAC15E2E3BA244007EAFA7 /* XCRemoteSwiftPackageReference "Face-Template-Registry-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppliedRecognition/Face-Template-Registry-Apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		3BAAC1612E3BA487007EAFA7 /* XCRemoteSwiftPackageReference "Face-Recognition-ArcFace-Apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B15EFA92E43BA6100938641 /* FaceDetectionRetinaFace */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FaceDetectionRetinaFace;
+		};
+		3B15EFAC2E43BE1900938641 /* FaceDetectionRetinaFace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B15EFAB2E43BE1900938641 /* XCRemoteSwiftPackageReference "Face-Detection-RetinaFace-Apple" */;
+			productName = FaceDetectionRetinaFace;
+		};
+		3B15EFAF2E43D10A00938641 /* FaceCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B15EFAE2E43D10A00938641 /* XCRemoteSwiftPackageReference "Face-Capture-Apple" */;
+			productName = FaceCapture;
+		};
+		3BA2F3EF2E4204FE00EE01A1 /* SpoofDeviceDetection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA2F3EE2E4204FE00EE01A1 /* XCRemoteSwiftPackageReference "Spoof-Device-Detection-Ver-ID-3-Apple" */;
+			productName = SpoofDeviceDetection;
+		};
+		3BA2F3F12E4204FE00EE01A1 /* SpoofDeviceDetectionCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA2F3EE2E4204FE00EE01A1 /* XCRemoteSwiftPackageReference "Spoof-Device-Detection-Ver-ID-3-Apple" */;
+			productName = SpoofDeviceDetectionCore;
+		};
+		3BAAC15F2E3BA244007EAFA7 /* FaceTemplateRegistry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BAAC15E2E3BA244007EAFA7 /* XCRemoteSwiftPackageReference "Face-Template-Registry-Apple" */;
+			productName = FaceTemplateRegistry;
+		};
+		3BAAC1622E3BA488007EAFA7 /* FaceRecognitionArcFaceCloud */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BAAC1612E3BA487007EAFA7 /* XCRemoteSwiftPackageReference "Face-Recognition-ArcFace-Apple" */;
+			productName = FaceRecognitionArcFaceCloud;
+		};
+		3BAAC1642E3BA488007EAFA7 /* FaceRecognitionArcFaceCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BAAC1612E3BA487007EAFA7 /* XCRemoteSwiftPackageReference "Face-Recognition-ArcFace-Apple" */;
+			productName = FaceRecognitionArcFaceCore;
+		};
+		3BAAC1792E3CE8A2007EAFA7 /* FaceCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FaceCapture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3BAAC1432E3B9EDB007EAFA7 /* Project object */;
+}

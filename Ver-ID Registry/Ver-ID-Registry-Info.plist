@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FaceRecognitionApiKey</key>
+	<string>BK1aJ1vpb08InLtOsdmhL6ZiRDJtq0H89nPqVuzB</string>
+	<key>FaceRecognitionUrl</key>
+	<string>https://itnlej3459.execute-api.us-east-1.amazonaws.com/Prod/extract_face_templates</string>
+	<key>SpoofDeviceDetectionApiKey</key>
+	<string>BK1aJ1vpb08InLtOsdmhL6ZiRDJtq0H89nPqVuzB</string>
+	<key>SpoofDeviceDetectionUrl</key>
+	<string>https://j62fj0da16.execute-api.us-east-1.amazonaws.com/Prod/detect_spoof_devices</string>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchBackground</string>
+		<key>UIImageName</key>
+		<string>LaunchImage</string>
+	</dict>
+</dict>
+</plist>
