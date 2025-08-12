@@ -91,8 +91,8 @@ struct ContentView: View {
                 case .settings:
                     SettingsView(navigationPath: self.$navigationPath)
                         .environmentObject(self.settings)
-                case .user(let identifier):
-                    UserView(userName: identifier)
+                case .user(let identifier, let editable):
+                    UserView(userName: identifier, editable: editable)
                 }
             }
             .alert("Identification", isPresented: .constant(capturedFace != nil), presenting: capturedFace) { face in
@@ -145,7 +145,7 @@ struct ContentView: View {
                 let results = try await registry.identifyFace(face.face, image: face.image)
                 await MainActor.run {
                     if let identified = results.first {
-                        self.navigationPath.append(Route.user(identified.taggedFaceTemplate.identifier))
+                        self.navigationPath.append(Route.user(identified.taggedFaceTemplate.identifier, true))
                     } else {
                         // Nobody identified
                         self.capturedFace = face
@@ -199,7 +199,7 @@ enum Route: Hashable {
     case users
     case register
     case settings
-    case user(String)
+    case user(String,Bool)
 }
 
 #Preview {

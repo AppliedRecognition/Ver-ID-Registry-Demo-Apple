@@ -10,6 +10,7 @@
 		3B15EFAA2E43BA6100938641 /* FaceDetectionRetinaFace in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15EFA92E43BA6100938641 /* FaceDetectionRetinaFace */; };
 		3B15EFAD2E43BE1900938641 /* FaceDetectionRetinaFace in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15EFAC2E43BE1900938641 /* FaceDetectionRetinaFace */; };
 		3B15EFB02E43D10A00938641 /* FaceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15EFAF2E43D10A00938641 /* FaceCapture */; };
+		3B15EFB22E4B403900938641 /* RegistrationErrorDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15EFB12E4B403900938641 /* RegistrationErrorDialog.swift */; };
 		3BA2F3F02E4204FE00EE01A1 /* SpoofDeviceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA2F3EF2E4204FE00EE01A1 /* SpoofDeviceDetection */; };
 		3BA2F3F22E4204FE00EE01A1 /* SpoofDeviceDetectionCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA2F3F12E4204FE00EE01A1 /* SpoofDeviceDetectionCore */; };
 		3BA2F3F52E42278000EE01A1 /* RegistrationIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F3F42E42278000EE01A1 /* RegistrationIntroView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B15EFB12E4B403900938641 /* RegistrationErrorDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationErrorDialog.swift; sourceTree = "<group>"; };
 		3BA2F3F42E42278000EE01A1 /* RegistrationIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationIntroView.swift; sourceTree = "<group>"; };
 		3BA2F3F62E422A6900EE01A1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3BA2F3F82E4230AE00EE01A1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				3BA2F3F42E42278000EE01A1 /* RegistrationIntroView.swift */,
 				3BA2F3F62E422A6900EE01A1 /* SettingsView.swift */,
 				3BA2F3F82E4230AE00EE01A1 /* Settings.swift */,
+				3B15EFB12E4B403900938641 /* RegistrationErrorDialog.swift */,
 			);
 			path = "Ver-ID Registry";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				3BAAC14F2E3B9EDB007EAFA7 /* Ver_ID_RegistryApp.swift in Sources */,
 				3BAAC1732E3BCED1007EAFA7 /* RandomNameGenerator.swift in Sources */,
 				3BA2F3F72E422A6900EE01A1 /* SettingsView.swift in Sources */,
+				3B15EFB22E4B403900938641 /* RegistrationErrorDialog.swift in Sources */,
 				3BAAC1752E3CC3ED007EAFA7 /* UserView.swift in Sources */,
 				3BAAC1772E3CC5C4007EAFA7 /* ImageUtils.swift in Sources */,
 			);
@@ -449,7 +453,7 @@
 			repositoryURL = "https://github.com/AppliedRecognition/Face-Template-Registry-Apple.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 2.1.0;
 			};
 		};
 		3BAAC1612E3BA487007EAFA7 /* XCRemoteSwiftPackageReference "Face-Recognition-ArcFace-Apple" */ = {

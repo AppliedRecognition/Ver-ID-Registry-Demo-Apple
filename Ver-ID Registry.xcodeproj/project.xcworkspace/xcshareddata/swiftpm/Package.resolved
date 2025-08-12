@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppliedRecognition/Face-Template-Registry-Apple.git",
       "state" : {
-        "revision" : "2fdf1f4e0c6c1df2ee81f9bdfea4db5cd7e6a9f7",
-        "version" : "2.0.0"
+        "revision" : "e58efd885f263112f326a7419e3187719a1153b3",
+        "version" : "2.1.0"
       }
     },
     {

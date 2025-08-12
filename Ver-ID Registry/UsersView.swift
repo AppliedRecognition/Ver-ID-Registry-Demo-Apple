@@ -43,7 +43,7 @@ struct UsersView: View {
                 }
                 .contentShape(Rectangle())
                 .onTapGesture {
-                    self.navigationPath.append(Route.user(user.userName))
+                    self.navigationPath.append(Route.user(user.userName, false))
                 }
             }
             .onDelete(perform: self.deleteUsers)

@@ -52,40 +52,16 @@ struct RegistrationReview: View {
                 Text("Failed to load image")
             }
         }
-        .alert("Error", isPresented: Binding(get: { self.error != nil }, set: { newVal in if !newVal { self.error = nil }}), presenting: self.error) { error in
-            if case FaceTemplateRegistryError.similarFaceAlreadyRegisteredAs(let userName, let template, _) = error {
-                Button {
-                    Task {
-                        do {
-                            try await self.saveFaceTemplate(template as! FaceTemplate<V24, [Float]>, capturedFace: self.capturedFace, as: userName)
-                        } catch {
-                            await MainActor.run {
-                                self.error = error
-                            }
-                        }
+        .registrationErrorAlert(userName: self.name, isPresented: Binding(get: { self.error != nil }, set: { newVal in if !newVal { self.error = nil }}), presenting: self.error) { template, userName in
+            Task(priority: .high) {
+                do {
+                    try await self.saveFaceTemplate(template, capturedFace: self.capturedFace, as: userName.trimmingCharacters(in: .whitespacesAndNewlines))
+                } catch {
+                    await MainActor.run {
+                        self.error = error
                     }
-                } label: {
-                    Text("Add face to \(userName)")
-                }
-                Button {
-                    Task {
-                        do {
-                            try await self.saveFaceTemplate(template as! FaceTemplate<V24, [Float]>, capturedFace: self.capturedFace, as: self.name.trimmingCharacters(in: .whitespacesAndNewlines))
-                        } catch {
-                            await MainActor.run {
-                                self.error = error
-                            }
-                        }
-                    }
-                } label: {
-                    Text("Save as \(self.name.trimmingCharacters(in: .whitespacesAndNewlines)) anyway")
                 }
             }
-            Button(role: .cancel) {} label: {
-                Text("Dismiss")
-            }
-        } message: { error in
-            Text("Registration failed: \(error.localizedDescription)")
         }
     }
     
@@ -117,7 +93,7 @@ struct RegistrationReview: View {
             self.modelContext.insert(taggedFace)
             try self.modelContext.save()
             self.navigationPath.removeLast(2)
-            self.navigationPath.append(Route.user(name))
+            self.navigationPath.append(Route.user(name, true))
         }
     }
 }
