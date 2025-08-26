@@ -27,11 +27,6 @@ struct UserView: View {
     @Query private var taggedFaces: [TaggedFace]
     @StateObject private var settings = Settings()
     @State private var error: Error?
-    private let faceRecognition = {
-        let apiKey = Bundle.main.object(forInfoDictionaryKey: "FaceRecognitionApiKey") as! String
-        let url = Bundle.main.object(forInfoDictionaryKey: "FaceRecognitionUrl") as! String
-        return FaceRecognitionArcFace(apiKey: apiKey, url: URL(string: url)!)
-    }()
     @State private var registering: Bool = false
     @State private var capturedFaceImage: UIImage?
     
@@ -133,9 +128,7 @@ struct UserView: View {
                 switch result {
                 case .success(capturedFaces: let faces, metadata: _):
                     let capturedFace = faces.first!
-                    var config = FaceTemplateRegistryConfiguration()
-                    config.identificationThreshold = self.settings.identificationThreshold
-                    let registry = FaceTemplateRegistry(faceRecognition: self.faceRecognition, faceTemplates: self.taggedFaces.map { TaggedFaceTemplate(faceTemplate: $0.template, identifier: $0.userName) }, configuration: config)
+                    let registry = FaceTemplateRegistry(faceRecognition: Settings.faceRecognition, faceTemplates: self.taggedFaces.map { TaggedFaceTemplate(faceTemplate: $0.template, identifier: $0.userName) }, configuration: self.settings.registryConfiguration)
                     let registeredFace = try await registry.registerFace(capturedFace.face, image: capturedFace.image, identifier: self.userName)
                     guard let faceImage = ImageUtils.faceImageFromCapture(capturedFace) else {
                         throw NSError()
