@@ -24,11 +24,6 @@ struct ContentView: View {
     @State var navigationPath = NavigationPath()
     @StateObject private var settings = Settings()
     
-    private let faceRecognition = {
-        let apiKey = Bundle.main.object(forInfoDictionaryKey: "FaceRecognitionApiKey") as! String
-        let url = Bundle.main.object(forInfoDictionaryKey: "FaceRecognitionUrl") as! String
-        return FaceRecognitionArcFace(apiKey: apiKey, url: URL(string: url)!)
-    }()
     private var registry: FaceTemplateRegistry<V24,[Float],FaceRecognitionArcFace>?
     
     private var content: some View {
@@ -191,7 +186,7 @@ struct ContentView: View {
         let faces = self.taggedFaces.map { face in
             TaggedFaceTemplate(faceTemplate: face.template, identifier: face.userName)
         }
-        return FaceTemplateRegistry(faceRecognition: self.faceRecognition, faceTemplates: faces)
+        return FaceTemplateRegistry(faceRecognition: Settings.faceRecognition, faceTemplates: faces)
     }
 }
 

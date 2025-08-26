@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppliedRecognition/Face-Capture-Apple.git",
       "state" : {
-        "revision" : "ebdd1621c9fd85bb464993dc95914c24e63229b0",
-        "version" : "2.0.0"
+        "revision" : "8c1823fce5cbe6c15356422d3312972c524a1373",
+        "version" : "2.0.1"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple.git",
       "state" : {
-        "revision" : "094de82c877637b51430b86d5944dfcb100b54ac",
-        "version" : "1.0.3"
+        "revision" : "4e953f0212c94e0f9794bcd75d1243396f5aae10",
+        "version" : "1.0.4"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple.git",
       "state" : {
-        "revision" : "38048ff93a4852c4fa7cb8119cc50b4f51f10279",
-        "version" : "1.0.1"
+        "revision" : "28b799a4c26cbbd4648a29200c48d4d7fdc91ab3",
+        "version" : "1.1.0"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppliedRecognition/Face-Template-Registry-Apple.git",
       "state" : {
-        "revision" : "e58efd885f263112f326a7419e3187719a1153b3",
-        "version" : "2.1.0"
+        "revision" : "38d9fe2af8fe9210294b0b57929159ff55d8efe5",
+        "version" : "3.0.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple.git",
       "state" : {
-        "revision" : "bb129ee2f5976144a102f8c92496fa949e62d196",
-        "version" : "1.0.1"
+        "revision" : "f4f6063ae0923a26666993127d7bf9e7e2719b25",
+        "version" : "1.0.2"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppliedRecognition/Ver-ID-Common-Types-Apple.git",
       "state" : {
-        "revision" : "3587575fd09adc2acb1db8bca7d80e1c4479eb55",
-        "version" : "2.2.0"
+        "revision" : "2ca2404344966ef1feb18b5b676beb51138a7792",
+        "version" : "3.0.0"
       }
     }
   ],

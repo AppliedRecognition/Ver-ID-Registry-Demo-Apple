@@ -12,6 +12,7 @@ import FaceTemplateRegistry
 import FaceCapture
 import FaceDetectionRetinaFace
 import SpoofDeviceDetection
+import FaceRecognitionArcFaceCloud
 import AVFoundation
 
 final class Settings: ObservableObject {
@@ -19,21 +20,33 @@ final class Settings: ObservableObject {
     @Published var identificationThreshold: Float
     @Published var useBackCamera: Bool
     @Published var enableSpoofDetection: Bool
+    @Published var registryConfiguration: FaceTemplateRegistryConfiguration
     
     private var cancellables = Set<AnyCancellable>()
-    private let defaults: [String: Any] = [
-        SettingKeys.identificationThreshold: FaceTemplateRegistryConfiguration().identificationThreshold,
-        SettingKeys.useBackCamera: false,
-        SettingKeys.enableSpoofDetection: true
-    ]
+    private let defaults: [String: Any]
+    
+    static let faceRecognition = {
+        let apiKey = Bundle.main.object(forInfoDictionaryKey: "FaceRecognitionApiKey") as! String
+        let url = Bundle.main.object(forInfoDictionaryKey: "FaceRecognitionUrl") as! String
+        return FaceRecognitionArcFace(apiKey: apiKey, url: URL(string: url)!)
+    }()
 
     init() {
+        self.defaults = [
+            SettingKeys.identificationThreshold: Settings.faceRecognition.defaultThreshold,
+            SettingKeys.useBackCamera: false,
+            SettingKeys.enableSpoofDetection: true
+        ]
         UserDefaults.standard.register(defaults: self.defaults)
         self.identificationThreshold = UserDefaults.standard.float(forKey: SettingKeys.identificationThreshold)
         self.useBackCamera = UserDefaults.standard.bool(forKey: SettingKeys.useBackCamera)
         self.enableSpoofDetection = UserDefaults.standard.bool(forKey: SettingKeys.enableSpoofDetection)
+        self.registryConfiguration = FaceTemplateRegistryConfiguration(
+            authenticationThreshold: Settings.faceRecognition.defaultThreshold, identificationThreshold: UserDefaults.standard.float(forKey: SettingKeys.identificationThreshold), autoEnrolmentThreshold: Settings.faceRecognition.defaultThreshold
+        )
         self.$identificationThreshold.sink { newValue in
             UserDefaults.standard.setValue(newValue, forKey: SettingKeys.identificationThreshold)
+            self.registryConfiguration.identificationThreshold = newValue
         }.store(in: &self.cancellables)
         self.$useBackCamera.sink { newValue in
             UserDefaults.standard.setValue(newValue, forKey: SettingKeys.useBackCamera)
