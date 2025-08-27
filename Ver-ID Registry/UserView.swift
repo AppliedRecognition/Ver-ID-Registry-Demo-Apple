@@ -95,7 +95,7 @@ struct UserView: View {
                 do {
                     try await MainActor.run {
                         guard let faceImage = self.capturedFaceImage else {
-                            throw NSError()
+                            throw ImageError.faceImageError
                         }
                         let taggedFace = TaggedFace(template: template, userName: userName, image: faceImage, dateAdded: .now)
                         self.modelContext.insert(taggedFace)
@@ -131,7 +131,7 @@ struct UserView: View {
                     let registry = FaceTemplateRegistry(faceRecognition: Settings.faceRecognition, faceTemplates: self.taggedFaces.map { TaggedFaceTemplate(faceTemplate: $0.template, identifier: $0.userName) }, configuration: self.settings.registryConfiguration)
                     let registeredFace = try await registry.registerFace(capturedFace.face, image: capturedFace.image, identifier: self.userName)
                     guard let faceImage = ImageUtils.faceImageFromCapture(capturedFace) else {
-                        throw NSError()
+                        throw ImageError.faceImageError
                     }
                     self.capturedFaceImage = faceImage
                     try await MainActor.run {

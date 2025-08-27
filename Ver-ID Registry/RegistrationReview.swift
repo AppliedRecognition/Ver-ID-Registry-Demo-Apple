@@ -86,7 +86,7 @@ struct RegistrationReview: View {
                                   capturedFace: CapturedFace,
                                   as name: String) async throws {
         guard let faceImage = ImageUtils.faceImageFromCapture(capturedFace) else {
-            throw NSError()
+            throw ImageError.faceImageError
         }
         try await MainActor.run {
             let taggedFace = TaggedFace(template: faceTemplate, userName: name, image: faceImage, dateAdded: .now)
